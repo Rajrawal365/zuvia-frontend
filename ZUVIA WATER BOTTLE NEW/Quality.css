@@ -1,0 +1,137 @@
+/* =====================================================
+   ZUVIA – QUALITY PAGE (SCOPED & SAFE)
+   Affects ONLY .quality-page
+===================================================== */
+
+.quality-page {
+  background: #ffffff;
+  color: #0f262a;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ======================
+   QUALITY WRAPPER
+====================== */
+
+.quality-page .quality-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 90px 8% 110px;
+}
+
+/* ======================
+   TITLE & INTRO
+====================== */
+
+.quality-page .quality-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #0f262a;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.quality-page .quality-intro {
+  max-width: 720px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4f6b6e;
+  margin-bottom: 60px;
+}
+
+/* ======================
+   STEPS GRID
+====================== */
+
+.quality-page .quality-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* ======================
+   INDIVIDUAL STEP CARD
+====================== */
+
+.quality-page .quality-step {
+  background: #f7fafa;
+  border-radius: 18px;
+  padding: 34px 30px;
+  position: relative;
+
+  box-shadow:
+    0 14px 30px rgba(7, 20, 20, 0.08),
+    0 4px 10px rgba(7, 20, 20, 0.05);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+/* Hover lift – subtle & premium */
+.quality-page .quality-step:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 26px 60px rgba(7, 20, 20, 0.14),
+    0 10px 20px rgba(7, 20, 20, 0.08);
+}
+
+/* ======================
+   STEP NUMBER STYLE
+====================== */
+
+.quality-page .quality-step::before {
+  content: attr(data-step);
+  position: absolute;
+  top: -14px;
+  right: 22px;
+
+  background: #00a9a4;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+
+  padding: 6px 14px;
+  border-radius: 999px;
+}
+
+/* ======================
+   STEP TEXT
+====================== */
+
+.quality-page .quality-step h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f262a;
+  margin-bottom: 10px;
+}
+
+.quality-page .quality-step p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4f6b6e;
+}
+
+/* ======================
+   RESPONSIVE
+====================== */
+
+@media (max-width: 1024px) {
+  .quality-page .quality-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .quality-page .quality-wrapper {
+    padding: 70px 6% 90px;
+  }
+
+  .quality-page .quality-title {
+    font-size: 32px;
+  }
+
+  .quality-page .quality-steps {
+    grid-template-columns: 1fr;
+  }
+}
