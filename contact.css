@@ -1,0 +1,87 @@
+/* ================================
+   CLEARPANI-STYLE CONTACT (ZUVIA)
+================================ */
+
+.clearpani-style-contact {
+  padding: 90px 0;
+}
+
+.contact-card {
+  max-width: 1100px;
+  margin: auto;
+  background: #ffffff;
+  padding: 70px 80px;
+  border-radius: 14px;
+  box-shadow: 0 25px 70px rgba(0,0,0,0.12);
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #0f262a;
+}
+
+.cp-row {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.cp-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cp-field.full {
+  flex: 100%;
+}
+
+.cp-field label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #00a9a4;
+  margin-bottom: 6px;
+}
+
+.cp-field input,
+.cp-field select,
+.cp-field textarea {
+  border: none;
+  border-bottom: 1.8px solid #d8eeee;
+  padding: 10px 4px;
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+  background: transparent;
+}
+
+.cp-field input:focus,
+.cp-field select:focus,
+.cp-field textarea:focus {
+  border-color: #00a9a4;
+}
+
+.cp-submit {
+  margin-top: 10px;
+  padding: 14px 34px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-card {
+    padding: 40px 25px;
+  }
+
+  .cp-row {
+    flex-direction: column;
+  }
+
+  .contact-title {
+    font-size: 36px;
+  }
+}
+/*  hader */
+
